@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="fill_parent"
+    android:gravity="bottom">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar10"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/side_nav_bar"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:weightSum="1">
+
+            <ImageView android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:paddingTop="16dp"
+                android:src="@android:drawable/sym_def_app_icon"
+                android:id="@+id/imageViewprofilepa"
+                android:contentDescription="pimage" />
+
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:layout_marginTop="30dp"
+                android:hint="Name"
+                android:textColorHint="@color/green" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/editText3"
+                android:hint="E-mail"
+                android:textColorHint="@color/green" />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText4"
+                android:textColorHint="@color/green"
+                android:hint="Gender"
+                />
+
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editText5"
+                android:phoneNumber="true"
+                android:layout_marginBottom="5dp"
+                android:textColorHint="@color/green"
+                android:hint="Phone Number" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText6"
+                android:hint="weight"
+                android:textColorHint="@color/green" />
+
+            <EditText
+                android:layout_width="302dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText7"
+                android:hint="Height"
+                android:textColorHint="@color/green" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/heartratebtn"
+                android:src="@drawable/heartrate"
+                android:background="#ffff"
+                android:contentDescription="@string/heartrate"
+                android:layout_marginLeft="7dp"
+
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pressurebtn"
+                android:background="#ffff"
+                android:src="@drawable/pressure"
+                android:contentDescription="@string/pressure"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="-95dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/thermobtn"
+                android:src="@drawable/thermometericon"
+                android:background="#ffff"
+                android:contentDescription="@string/thermometer"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/pressurebtn"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="-100dp"
+                />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Records "
+                android:id="@+id/record"
+                android:layout_margin="20dp"
+                android:layout_gravity="right"
+                android:background="@color/green"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_below="@+id/thermobtn"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
